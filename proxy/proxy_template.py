@@ -1,34 +1,37 @@
 """
 This module contains default proxy settings, using for getting proxies.
 
+PROXY_ENABLE: whether we need to handle proxy
+
 """
 
+PROXY_ENABLE = True
 
-REQUEST_URLS = {
+PROXY_URLS = {
     100 : 'https://proxy.peuland.com/proxy/search_proxy.php',
     200 : 'http://www.proxycn.cn/html_proxy/port8080-1.html',
 }
 
-REQUEST_METHODS = {
+PROXY_METHODS = {
     100 : 'session-post',
     200 : 'session-post',
 }
 
-REQEUST_HOSTS = {
+PROXY_HOSTS = {
     100 : 'proxy.peuland.com',
     200 : 'proxycn.cn',
 }
 
 
-COOKIE_ENABLE = True
+PROXY_COOKIE_ENABLE = True
 
-REQUEST_COOKIES = {
+PROXY_COOKIES = {
     100 : 'peuland_id=35fefe23fedc52da9283ac5ed131cbab;PHPSESSID=pkm7b65es5ojb8oerc7a9i0q31; peuland_md5=ca1f57155f5638ade3c28a900fbdbd55;w_h=800; w_w=1280; w_cd=24; w_a_h=773; w_a_w=1280; php_id=1792520643',
     200 : 'Tango_UserReference=38D8FF1624305B16496E9808; MTCCK=1; _csuid=48feeef505683659; cookmcnt=999; CID=1459382; cookMemberName=YunFan; cookMemberID=61448; savedEmail=liyunfan@genscriptcorp.com; DLDExec=OK; __utma=232384002.1655516880.1231991960.1231994793.1232000250.3; __utmb=232384002; __utmc=232384002; __utmz=232384002.1231991960.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)',
 }
 
 DATA_USER_PSW_ENABLE = False
-REQEUST_DATA_USER_PSW = {
+PROXY_DATA_USER_PSW = {
     100 : { 'user' : 'xxx', 'passdw' : 'xxx' },
     200 : { 'user' : 'xxx', 'passdw' : 'xxx' },
 }
@@ -36,7 +39,7 @@ REQEUST_DATA_USER_PSW = {
 PROXY_SERVER = 'http://httpbin.org/ip'
 PROXY_SERVER_BAK = ''
 
-USER_AGENT = [
+PROXY_USER_AGENT = [
     "Avant Browser/1.2.789rel1 (http://www.avantbrowser.com)",
     "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.0 Safari/532.5",
     "Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/532.9 (KHTML, like Gecko) Chrome/5.0.310.0 Safari/532.9",
