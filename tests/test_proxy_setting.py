@@ -1,6 +1,5 @@
 """
 test module proxy settings
-
 """
 
 import sys
@@ -25,6 +24,11 @@ def main():
     from proxy import SettingsProxy
     setting = SettingsProxy()
     print setting['PROXY_URLS']
+    print setting['PROXY_METHODS'][100]
+    print setting['PROXY_USER_AGENT'][1]
+    from proxy.get_proxy import Proxy
+    proxy = Proxy()
+    proxy.get_proxy()
 
 if __name__ == '__main__':
     main()

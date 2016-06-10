@@ -1,15 +1,30 @@
 """
 This module contains default proxy settings, using for getting proxies.
 
+All proxies we get is from free proxy web site(so precious to take care), so we cannot set proxy checking
+timeout too frequency(10 hours for default or we don't have any proxy to use)
+
 PROXY_ENABLE: whether we need to handle proxy
 
 """
 
 PROXY_ENABLE = True
 
+PROXY_CHECK_TIMEOUT = 36000
+
 PROXY_URLS = {
     100 : 'https://proxy.peuland.com/proxy/search_proxy.php',
     200 : 'http://www.proxycn.cn/html_proxy/port8080-1.html',
+}
+
+PROXY_REFER = {
+    100 : 'https://proxy.peuland.com/proxy_list_by_category.htm',
+    200 : '',
+}
+
+PEOXY_X_REQUEST = {
+    100 : 'XMLHttpRequest',
+    200 : '',
 }
 
 PROXY_METHODS = {
@@ -22,12 +37,25 @@ PROXY_HOSTS = {
     200 : 'proxycn.cn',
 }
 
+PROXY_RESPONSE_
 
 PROXY_COOKIE_ENABLE = True
 
 PROXY_COOKIES = {
     100 : 'peuland_id=35fefe23fedc52da9283ac5ed131cbab;PHPSESSID=pkm7b65es5ojb8oerc7a9i0q31; peuland_md5=ca1f57155f5638ade3c28a900fbdbd55;w_h=800; w_w=1280; w_cd=24; w_a_h=773; w_a_w=1280; php_id=1792520643',
     200 : 'Tango_UserReference=38D8FF1624305B16496E9808; MTCCK=1; _csuid=48feeef505683659; cookmcnt=999; CID=1459382; cookMemberName=YunFan; cookMemberID=61448; savedEmail=liyunfan@genscriptcorp.com; DLDExec=OK; __utma=232384002.1655516880.1231991960.1231994793.1232000250.3; __utmb=232384002; __utmc=232384002; __utmz=232384002.1231991960.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)',
+}
+
+PROXY_PAYLOAD = {
+    100 : { 'type': '',
+            'country_code': 'CN',
+            'is_clusters': '',
+            'is_https': '',
+            'level_type': 'anonymous',
+            'search_type': 'all',
+            'page': 1,
+        },
+    200 : '',
 }
 
 DATA_USER_PSW_ENABLE = False
