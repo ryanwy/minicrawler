@@ -55,4 +55,4 @@ class Proxy(object):
         
         if self.response.status_code == 200:
             self.res_content_type = self.response.headers.get('content-type')
-        
+                    
