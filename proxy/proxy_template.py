@@ -37,7 +37,9 @@ PROXY_HOSTS = {
     200 : 'proxycn.cn',
 }
 
-PROXY_RESPONSE_
+PROXY_RESPONSE_INFO = {
+    'encrypt_method' : 'base64',
+}
 
 PROXY_COOKIE_ENABLE = True
 
